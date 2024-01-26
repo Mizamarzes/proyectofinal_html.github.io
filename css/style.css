@@ -56,22 +56,33 @@ header{
     padding: 30px 20px;
     background-color: orange;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     transition: 0.7s;
     position: fixed;
     z-index: 10;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2{
+    display: flex;
+    justify-content: flex-start;
+}
+
 header nav{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 header nav ul{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -89,4 +100,5 @@ header nav ul li a{
     transition: 0.7s;
 }
 
+/* Seccion home - principal */
 
