@@ -23,28 +23,13 @@ section{
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+    overflow: hidden;
 }
 
 h1{
     color: rgb(226, 226, 226);
     text-shadow: 1px 1px 4px #000;
     font-size: 100px;
-}
-
-.home{
-    background-color: rgb(36, 164, 138);
-}
-.about{
-    background-color: rgb(211, 79, 79);
-}
-.menu{
-    background-color: rgb(67, 91, 175 );
-}
-.services{
-    background-color: rgb(191, 64, 191);
-}
-.contact{
-    background-color: rgb(155, 27, 26);
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -105,10 +90,16 @@ header nav ul li a{
 /* ----------------------------------------------------------------------------- */
 /* Seccion home - principal */
 
+.home{
+    background-color: rgb(36, 164, 138);
+}
+
 #titulo-home{
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #image-home{
@@ -116,28 +107,101 @@ header nav ul li a{
     margin: 10px;
 }
 
-
+#image-home img{
+    height: 700px;
+}
 
 
 /* ----------------------------------------------------------------------------- */
 /* Seccion About - secundaria - informacion sobre la empresa */
 
-
+.about{
+    background-color: rgb(211, 79, 79);
+    
+}
 
 
 /* ----------------------------------------------------------------------------- */
 /* Seccion Menu - comidas y principales platillos */
 
 
+.menu{
+    background-color: rgb(67, 91, 175 );
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu-img div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 3px;
+    border: 2px solid #000;
+}
+
+#menu-img img{
+    width: 200px;
+    height: 200px;
+}
+
 
 /* ----------------------------------------------------------------------------- */
 /* Seccion Services - servicios que ofrece la empresa */
 
+.services{
+    background-color: rgb(191, 64, 191);
+    display: flex;
+    flex-direction: column;
+}
 
+#services-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#services-img div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 3px;
+    border: 2px solid #000;
+}
+
+.services img{
+    width: 200px;
+    height: 200px;
+}
 
 /* ----------------------------------------------------------------------------- */
-/* Seccion contact - frase y un footer con informacion general */
+/* Seccion frase */
 
+.frase{
+    background-color: rgb(155, 27, 26);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Seccion contact - footer */
 
 
 
