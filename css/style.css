@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(variables.css);
 
 /* ----------------------------------------------------------------------------- */
 /* Configuraciones principales */
@@ -23,13 +24,31 @@ section{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    scroll-snap-align: start;
+    border: 2px solid var(--color-shadow);
 }
 
 h1{
-    color: rgb(226, 226, 226);
-    text-shadow: 1px 1px 4px #000;
-    font-size: 75px;
+    color: var(--color-title);
+    text-shadow: 1px 1px 4px var(--color-shadow);
+    font-size: 100px;
+}
+
+h2{
+    color: var(--color-lorem);
+    text-shadow: 1px 1px 4px var(--color-shadow);
+    font-size: 50px;
+}
+
+h3{
+    color: var(--color-lorem);
+    text-shadow: 1px 1px 4px var(--color-shadow);
+    font-size: 25px;
+}
+
+p{
+    color: var(--color-lorem);
+    text-shadow: 1px 1px 4px var(--color-shadow);
+    font-size: 15px;
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -37,16 +56,19 @@ h1{
 
 header{
     width: 100%;
-    height: 50px;
+    height: 70px;
     top: 0;
     left: 0;
     padding: 30px 20px;
-    background-color: orange;
+    background-color: var(--color-primary-3);
+    border: 2px solid var(--color-shadow);
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     transition: 0.7s;
     position: fixed;
     z-index: 10;
+    overflow: hidden;
 }
 
 header{
@@ -55,12 +77,28 @@ header{
     align-items: center;
 }
 
-header h2{
+header div{
+    margin: 10px;
+    width: 50%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+
+header div h2{
+    font-size: 20px;
+    color: var(--color-shadow);
+}
+
+header div img{
+    margin-top: 12px;
+    width: 100px;
+    height: 100px;
+    
 }
 
 header nav{
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -95,7 +133,7 @@ header nav ul li:hover{
 /* Seccion home - principal */
 
 .home{
-    background-color: rgb(36, 164, 138);
+    background-color: var(--color-primary-3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +154,8 @@ header nav ul li:hover{
 }
 
 #image-home img{
-    height: 700px;
+    width: 900px;
+    height: 600px;
 }
 
 
@@ -124,7 +163,7 @@ header nav ul li:hover{
 /* Seccion About - secundaria - informacion sobre la empresa */
 
 .about{
-    background-color: rgb(211, 79, 79);
+    background-color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +187,7 @@ header nav ul li:hover{
 
 
 .menu{
-    background-color: rgb(67, 91, 175 );
+    background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
 }
@@ -187,7 +226,7 @@ header nav ul li:hover{
 /* Seccion Services - servicios que ofrece la empresa */
 
 .services{
-    background-color: rgb(191, 64, 191);
+    background-color: var(--color-background);
     display: flex;
     flex-direction: column;
 }
@@ -225,7 +264,7 @@ header nav ul li:hover{
 /* Seccion frase */
 
 .frase{
-    background-color: rgb(155, 27, 26);
+    background-color: var(--color-primary);
 }
 
 .frase-text{
@@ -235,6 +274,27 @@ header nav ul li:hover{
     border: 3px solid #0a1a2a;
     padding: 20px;
 }
+
+/* ----------------------------------------------------------------------------- */
+/* Ubicacion */
+
+.ubicacion{
+    background-color: var(--color-background);
+}
+
+#mapa-location{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mapa{
+    width: 100%;
+    height: 750px;
+}
+
 
 /* ----------------------------------------------------------------------------- */
 /* Seccion contact - footer */
@@ -250,7 +310,7 @@ header nav ul li:hover{
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
 }
@@ -315,8 +375,6 @@ header nav ul li:hover{
         margin-top: 10px;
     }
 }
-
-
 
 /* ----------------------------------------------------------------------------- */
 /* RESPONSIVE DESIGN */
