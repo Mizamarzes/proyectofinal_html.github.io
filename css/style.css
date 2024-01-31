@@ -27,7 +27,7 @@ section{
     border: 2px solid var(--color-shadow);
 }
 
-h1{
+/* h1{
     color: var(--color-title);
     text-shadow: 1px 1px 4px var(--color-shadow);
     font-size: 100px;
@@ -49,7 +49,7 @@ p{
     color: var(--color-lorem);
     text-shadow: 1px 1px 4px var(--color-shadow);
     font-size: 15px;
-}
+} */
 
 /* ----------------------------------------------------------------------------- */
 /* Header barra de navegacion, nav */
@@ -94,7 +94,6 @@ header div img{
     margin-top: 12px;
     width: 100px;
     height: 100px;
-    
 }
 
 header nav{
@@ -154,8 +153,8 @@ header nav ul li:hover{
 }
 
 #image-home img{
-    width: 900px;
-    height: 600px;
+    width: 700px;
+    height: 500px;
 }
 
 
@@ -174,7 +173,8 @@ header nav ul li:hover{
 }
 
 #about-img img{
-    height: 600px;
+    width: 700px;
+    height: 500px;
 }
 
 #about-text{
@@ -250,6 +250,8 @@ header nav ul li:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     margin: 20px;
     padding: 3px;
     border: 2px solid #000;
@@ -292,7 +294,7 @@ header nav ul li:hover{
 
 #mapa{
     width: 100%;
-    height: 750px;
+    height: 500px;
 }
 
 
@@ -300,7 +302,7 @@ header nav ul li:hover{
 /* Seccion contact - footer */
 
 .contact{
-    height: 500px;
+    height: 600px;
     width: 100%;
     background-color: #0a141d;
 }
@@ -313,6 +315,11 @@ header nav ul li:hover{
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box-img .logo-img-footer{
+    width: 400px;
+    height: 400px;
 }
 
 .pie-pagina .grupo-1 .navegacion{
@@ -366,6 +373,9 @@ header nav ul li:hover{
     font-size: 15px;
 }
 
+/* ----------------------------------------------------------------------------- */
+/* RESPONSIVE DESIGN */
+
 @media screen and (max-width:768px){
     .pie-pagina .grupo-1{
         width: 90%;
@@ -375,7 +385,3 @@ header nav ul li:hover{
         margin-top: 10px;
     }
 }
-
-/* ----------------------------------------------------------------------------- */
-/* RESPONSIVE DESIGN */
-
