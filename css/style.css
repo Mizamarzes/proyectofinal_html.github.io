@@ -24,32 +24,30 @@ section{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 2px solid var(--color-shadow);
 }
 
-/* h1{
+h1{
     color: var(--color-title);
     text-shadow: 1px 1px 4px var(--color-shadow);
     font-size: 100px;
 }
 
 h2{
-    color: var(--color-lorem);
+    color: var(--color-title);
     text-shadow: 1px 1px 4px var(--color-shadow);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h3{
     color: var(--color-lorem);
-    text-shadow: 1px 1px 4px var(--color-shadow);
     font-size: 25px;
 }
 
 p{
     color: var(--color-lorem);
-    text-shadow: 1px 1px 4px var(--color-shadow);
     font-size: 15px;
-} */
+}
+
 
 /* ----------------------------------------------------------------------------- */
 /* Header barra de navegacion, nav */
@@ -61,7 +59,6 @@ header{
     left: 0;
     padding: 30px 20px;
     background-color: var(--color-primary-3);
-    border: 2px solid var(--color-shadow);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -86,8 +83,8 @@ header div{
 }
 
 header div h2{
-    font-size: 20px;
-    color: var(--color-shadow);
+    font-size: 40px;
+    font-weight: 200;
 }
 
 header div img{
@@ -138,17 +135,35 @@ header nav ul li:hover{
     justify-content: center;
 }
 
+
 #titulo-home{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+#titulo-home label{
+    width: 150px;
+    height: 55px;
+}
+
+#titulo-home label button{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#titulo-home label button:hover{
+    color: var(--color-hover);
 }
 
 #image-home{
-    width: 50%;
+    width: 40%;
     margin: 10px;
 }
 
@@ -165,20 +180,44 @@ header nav ul li:hover{
     background-color: var(--color-primary);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #about-img{
+    width: 40%;
     margin: 10px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #about-img img{
-    width: 700px;
-    height: 500px;
+    width: 100%;
+    height: 700px;
 }
 
 #about-text{
-    margin: 10px;
+    width: 40%;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-text label{
+    width: 150px;
+    height: 55px;
+}
+
+#about-text label button{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#about-text label button:hover{
+    color: var(--color-hover);
 }
 
 
@@ -193,12 +232,16 @@ header nav ul li:hover{
 }
 
 #menu-text{
+    width: 100%;
+    height: 100px;
     display: flex;
+    text-align: center;
     flex-direction: column;
-    align-items: center;
+    
 }
 
 #menu-img{
+    margin-top: 50px;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -213,7 +256,6 @@ header nav ul li:hover{
     align-items: center;
     margin: 20px;
     padding: 3px;
-    border: 2px solid #000;
 }
 
 #menu-img img{
@@ -232,6 +274,8 @@ header nav ul li:hover{
 }
 
 #services-text{
+    width: 90%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,14 +297,21 @@ header nav ul li:hover{
     justify-content: center;
     text-align: center;
     margin: 20px;
-    padding: 3px;
-    border: 2px solid #000;
+    padding: 20px;
+}
+
+#services-img div p{
+    margin-top: 10px;
+    color: var(--color-title);
+    text-align: justify;
+    margin: 10px;
 }
 
 .services img{
     width: 400px;
     height: 400px;
 }
+
 
 /* ----------------------------------------------------------------------------- */
 /* Seccion frase */

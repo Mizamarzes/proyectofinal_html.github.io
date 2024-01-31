@@ -3,9 +3,10 @@
     --color-primary:#E8DCCC;
     --color-primary-2:#F3ECE4;
     --color-primary-3:#D84339;
-    --color-shadow:#0F0F0F;
     --color-title:#EEEEEE;
-    --color-lorem:#EEEEEE;
+    --color-lorem:#0F0F0F;
+    --color-hover:red;
+    --color-shadow:#0F0F0F;
 }
 
 ::selection{
