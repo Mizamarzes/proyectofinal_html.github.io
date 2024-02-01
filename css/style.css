@@ -367,7 +367,7 @@ header nav ul li:hover{
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
 }
@@ -386,7 +386,7 @@ header nav ul li:hover{
 }
 
 .pie-pagina .grupo-1 .navegacion a:hover{
-    color: aqua;
+    color: var(--color-hover);
 }
 
 .pie-pagina .grupo-1 .box-footer h2{
@@ -414,7 +414,7 @@ header nav ul li:hover{
 }
 
 .pie-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
+    color: var(--color-hover);
 }
 
 .pie-pagina .grupo-2{
@@ -431,7 +431,8 @@ header nav ul li:hover{
 /* ----------------------------------------------------------------------------- */
 /* RESPONSIVE DESIGN */
 
-
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
 /* MAX-WIDTH: 800px */
 
 @media screen and (max-width:800px){
@@ -439,26 +440,108 @@ header nav ul li:hover{
     /* -------------------- */
     /* navbar header */
     
+    header h2{
+        font-size: 20px;
+    }
 
+    header nav{
+        font-size: 10px;
+    }
 
     /* -------------------- */
     /* Seccion home */
 
-    html h1,h2,h3,p{
-        font-size: 50%;
+    #titulo-home h2{
+        font-size: 25px;
     }
 
-    html img{
-        width: 10%;
+    #image-home img{
+        width: 100%;
+        height: 300px;
     }
 
     /* -------------------- */
+    /* Seccion about us */
+
+    #about-img img{
+        width: 100%;
+        height: 500px;
+    }
+
+    #about-text h1{
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    /* -------------------- */
+    /* Seccion menu */
+
+    #menu-text h1{
+        margin-top: 30px;
+        font-size: 40px;
+    }
+
+    #menu-img img{
+        width: 100%;
+        height: 200px;
+    }
+
+    #menu-img h3{
+        font-size: 18px;
+    }
+
+    /* -------------------- */
+    /* Seccion services */
+
+    #services-text h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    #services-img div img{
+        width: 100%;
+        height: 200px;
+    }
+
+    #services-img div h2{
+        font-size: 18px;
+    }
+
+    #services-img div p{
+        font-size: 10px;
+    }
+    
+    /* -------------------- */
+    /* frase */
+
+    .frase-text h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    /* -------------------- */
+    /* Mapa */
+
+    #mapa-location h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    #mapa-location iframe{
+        width: 60%;
+        height: 400px;
+    }
+
+    /* -------------------- */
+    /* footer */
+
     .pie-pagina .grupo-1{
         width: 90%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
         margin-top: 10px;
+        text-align: center;
     }
 }
 
@@ -523,24 +606,175 @@ header nav ul li:hover{
         color: var(--color-primary-2);
     }
     
-    
     /* -------------------- */
     /* Seccion home */
 
-    html h1,h2,h3,p{
-        font-size: 50%;
+    #seccion-home{
+        flex-direction: column;
+    }
+    
+    #titulo-home{
+        margin-top: 15px;
+        width: 90%;
     }
 
-    html img{
-        width: 10%;
+    #titulo-home h2{
+        font-size: 15px;
+    }
+
+    #titulo-home label{
+        width: 100px;
+        height: 30px;
+    }
+
+    #titulo-home label button{
+        font-size: 10px;
+    }
+
+    #image-home{
+        width: 100%;
+    }
+
+    #image-home img{
+        margin-top: 50px;
+        width: 90%;
+        height: 200px;
+
     }
 
     /* -------------------- */
+    /* Seccion about us */
+
+    #seccion-about{
+        flex-direction: column-reverse;
+    }
+
+    #about-text{
+        margin-top: 60px;
+        width: 90%;
+    }
+    
+    #about-img{
+        width: 100%;
+    }
+
+    #about-img img{
+        width: 100%;
+        height: 300px;
+    }
+
+    #about-text h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    #about-text label{
+        width: 100px;
+        height: 30px;
+    }
+
+    /* -------------------- */
+    /* Seccion menu */
+
+    #menu-text{
+        height: 50px;
+    }
+
+    #menu-text h1{
+        margin-top: 0px;
+        font-size: 35px;
+    }
+
+    #menu-img{
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #menu-img div{
+        height: 150px;
+        margin: 0;
+        padding: 0;
+        margin: 10px;
+    }
+
+    #menu-img img{
+        width: 100%;
+        height: 100px;
+    }
+
+    #menu-img h3{
+        font-size: 10px;
+    }
+
+    /* -------------------- */
+    /* Seccion services */
+
+    #seccion-services div{
+        flex-direction: column;
+    }
+
+    #services-text h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    #services-img div{
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+        margin: 10px;
+    }
+
+    #services-img div img{
+        width: 50%;
+        height: 100px;
+    }
+
+    #services-img div h2{
+        font-size: 18px;
+    }
+
+    #services-img div p{
+        font-size: 10px;
+    }
+    
+    /* -------------------- */
+    /* frase */
+
+    .frase-text h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    /* -------------------- */
+    /* Mapa */
+
+    #mapa-location h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    #mapa-location iframe{
+        width: 60%;
+        height: 400px;
+    }
+
+    /* -------------------- */
+    /* footer */
+
     .pie-pagina .grupo-1{
         width: 90%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
         margin-top: 10px;
+        text-align: center;
     }
 }
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* MAX-WIDTH: 550px */
