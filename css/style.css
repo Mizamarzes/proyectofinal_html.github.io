@@ -24,7 +24,6 @@ section{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /*  scroll-snap-align: start;  Fija las paginas  y colabora al usuario    */
 }
 
 h1{
@@ -127,11 +126,6 @@ header nav ul li:hover{
 
 .abrir-menu, .cerrar-menu{
     display: none;
-    border: 0;
-    font-size: 1.25rem;
-    background-color: transparent;
-    cursor: pointer;
-    color: var(--color-primary-2);
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -143,6 +137,7 @@ header nav ul li:hover{
     align-items: center;
     justify-content: center;
 }
+
 
 #titulo-home{
     width: 40%;
@@ -452,11 +447,6 @@ header nav ul li:hover{
         font-size: 10px;
     }
 
-    header nav ul li a{
-        margin: 10px;
-        letter-spacing: 0;
-    }
-
     /* -------------------- */
     /* Seccion home */
 
@@ -563,17 +553,21 @@ header nav ul li:hover{
     /* -------------------- */
     /* navbar header */
     
-    header{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2rem;
-    }
-
     .abrir-menu, 
     .cerrar-menu{
         display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: var(--color-lorem);
+    }
+
+    .cerrar-menu{
+        color: var(--color-title);
     }
 
     .nav{
@@ -587,21 +581,19 @@ header nav ul li:hover{
         display: flex;
         flex-direction: column;
         align-items: end;
-        justify-content: flex-start;
         gap: 1rem;
         position: absolute;
-        right: 0;
         top: 0;
+        right: 0;
+        bottom: 0;
         background-color: var(--color-background);
         padding: 2rem;
-        box-shadow: 0 0 0 2vmax rgba(0, 0, 0, .5);
+        box-shadow: 0 0 0 10vmax rgba(0, 0, 0, .5);
     }
 
     .nav.visible{
         opacity: 1;
         visibility: visible;
-        height: 50vh;
-        width: 30%;
     }
 
     .nav-list{
@@ -804,107 +796,6 @@ header nav ul li:hover{
     .pie-pagina .grupo-1 .red-social{
         text-align: center;
     }
-}
 
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* MAX-WIDTH: 550px */
 
-@media screen and (max-width:1024px){
-
-    /* -------------------- */
-    /* navbar header */
-    
-    header h2{
-        font-size: 30px;
-    }
-
-    header nav{
-        font-size: 15px;
-    }
-
-    header nav ul li a{
-        margin: 20px;
-        letter-spacing: 2px;
-    }
-
-    /* -------------------- */
-    /* Seccion home */
-
-    #titulo-home h2{
-        font-size: 28px;
-    }
-
-    #image-home img{
-        width: 100%;
-        height: 320px;
-    }
-
-    /* -------------------- */
-    /* Seccion about us */
-
-    #about-img img{
-        width: 100%;
-        height: 600px;
-    }
-
-    #about-text h1{
-        font-size: 45px;
-        margin-bottom: 10px;
-    }
-
-    /* -------------------- */
-    /* Seccion menu */
-
-    #menu-text h1{
-        margin-top: 80px;
-        font-size: 40px;
-    }
-
-    #menu-img img{
-        width: 100%;
-        height: 200px;
-    }
-
-    #menu-img h3{
-        font-size: 18px;
-    }
-
-    /* -------------------- */
-    /* Seccion services */
-
-    #services-text h1{
-        font-size: 50px;
-        margin-top: 80px;
-    }
-
-    #services-img div img{
-        width: 100%;
-        height: 200px;
-    }
-
-    #services-img div h2{
-        font-size: 25px;
-    }
-
-    #services-img div p{
-        font-size: 15px;
-    }
-    
-    /* -------------------- */
-    /* frase */
-
-    .frase-text h1{
-        font-size: 50px;
-        text-align: center;
-    }
-
-    /* -------------------- */
-    /* Mapa */
-    /* -------------------- */
-    /* footer */
-
-    .contact{
-        height: 420px;
-    }
 }
