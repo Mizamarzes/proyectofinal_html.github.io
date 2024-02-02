@@ -715,9 +715,13 @@ header nav ul li:hover{
         flex-direction: column;
     }
 
+    #services-text{
+        height: auto;
+    }
+
     #services-text h1{
         font-size: 40px;
-        margin-top: 30px;
+        margin-top: 0;
     }
 
     #services-img div{
@@ -725,12 +729,12 @@ header nav ul li:hover{
         height: 150px;
         margin: 0;
         padding: 0;
-        margin: 10px;
+        margin-top: 10px;
     }
 
     #services-img div img{
         width: 50%;
-        height: 100px;
+        height: 70px;
     }
 
     #services-img div h2{
@@ -766,15 +770,33 @@ header nav ul li:hover{
     /* footer */
 
     .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-        margin-top: 10px;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: justify;
+        margin-left: 20px;
+        margin-top: 0;
+        padding: 15px 0px;
+        grid-gap: 10px;
+        top: 0;
+    }
+
+    .pie-pagina .grupo-1 .navegacion li{
+        font-size: 12px;
+    }
+
+    .pie-pagina .grupo-1 .box-footer h2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .pie-pagina .grupo-1 .box-footer p{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .pie-pagina .grupo-1 .red-social{
         text-align: center;
     }
-}
 
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* MAX-WIDTH: 550px */
+
+}
