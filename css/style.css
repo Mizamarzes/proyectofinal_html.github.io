@@ -127,6 +127,7 @@ p{
     flex-direction: column;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -200,22 +201,15 @@ p{
     color: var(--color-hover);
 }
 
-
 /* ----------------------------------------------------------------------------- */
 /* Seccion Menu - comidas y principales platillos */
-
 
 .menu{
     background-color: var(--color-primary);
     flex-direction: column;
 }
 
-#menu-text{
-    height: 100px;
-    text-align: center;
-}
-
-#menu-img{
+#menu-list{
     margin-top: 50px;
     width: 90%;
     display: flex;
@@ -223,7 +217,7 @@ p{
     justify-content: space-between;
 }
 
-#menu-img div{
+#menu-list li{
     width: 30%;
     height: 500px;
     display: flex;
@@ -233,7 +227,7 @@ p{
     padding: 3px;
 }
 
-#menu-img img{
+#menu-list li img{
     width: 400px;
     height: 400px;
 }
@@ -248,22 +242,14 @@ p{
     flex-direction: column;
 }
 
-#services-text{
-    width: 90%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#services-img{
+#services-item{
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#services-img div{
+#services-item article{
     width: 30%;
     height: 500px;
     display: flex;
@@ -275,14 +261,12 @@ p{
     padding: 20px;
 }
 
-#services-img div p{
-    margin-top: 5px;
-    color: var(--color-title);
+#services-item article p{
     text-align: justify;
-    font-size: 18px;
+    color: var(--color-title);
 }
 
-.services img{
+#services-item article img{
     width: 400px;
     height: 400px;
 }
@@ -408,18 +392,18 @@ p{
 /* ----------------------------------------------------------------------------- */
 /* MAX-WIDTH: 1024px */
 
-@media screen and (max-width:1024){
+@media screen and (min-width: 801px) and (max-width: 1024px){
     /* --------------------- */
     /* seccion home */
 
     #image-home{
-        width: 100%;   
+        width: 50%;   
     }
 
     #image-home img{
         margin-top: 30px;
-        width: 10%;
-        height: 200px;
+        width: 100%;
+        height: 400px;
     }
 }
 
@@ -427,7 +411,7 @@ p{
 /* ----------------------------------------------------------------------------- */
 /* MAX-WIDTH: 800px */
 
-@media screen and (max-width:800px){
+@media screen and (min-width:551px) and (max-width:800px){
 
     html h1{
         font-size: 55px;
@@ -435,8 +419,11 @@ p{
     html h2{
         font-size: 20px;
     }
-    html p{
+    html h3{
         font-size: 18px;
+    }
+    html p{
+        font-size: 15px;
     }
 
     /* -------------------- */
@@ -459,17 +446,19 @@ p{
     }
 
     #titulo-home{
-        width: 60%;
+        width: 100%;
+        height: 200px;
     }
 
     #image-home{
-        width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
+        width: 80%;
+        height: 50%;
     }
 
     #image-home img{
         width: 100%;
-        height: auto;
+        height: auto
     }
 
     /* -------------------- */
@@ -503,51 +492,37 @@ p{
     /* -------------------- */
     /* Seccion menu */
 
-    #menu-text h1{
-        margin-top: 0px;
-        font-size: 55px;
-    }
-
-    #menu-img{
+    #menu-list{
         margin-top: 30px;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
 
-    #menu-img div{
+    #menu-list li{
         height: 200px;
         margin: 0;
         padding: 0;
         margin: 10px;
     }
 
-    #menu-img img{
+    #menu-list li img{
         width: 100%;
         height: 200px;
-    }
-
-    #menu-img h3{
-        font-size: 15px;
     }
 
     /* -------------------- */
     /* Seccion services */
 
-    #seccion-services div{
+    #seccion-services{
         flex-direction: column;
     }
 
-    #services-text{
-        height: auto;
+    #services-item{
+        flex-direction: column;
     }
 
-    #services-text h1{
-        font-size: 45px;
-        margin-top: 0;
-    }
-
-    #services-img div{
+    #services-item article{
         width: 100%;
         height: 200px;
         margin: 0;
@@ -555,26 +530,13 @@ p{
         margin-top: 10px;
     }
 
-    #services-img div img{
+    #services-item article img{
         width: 40%;
         height: 100px;
     }
 
-    #services-img div h2{
-        font-size: 20px;
-    }
-
-    #services-img div p{
-        font-size: 16px;
-    }
-    
     /* -------------------- */
     /* frase */
-
-    .frase-text h1{
-        font-size: 50px;
-        text-align: center;
-    }
 
     /* -------------------- */
     /* Mapa */
@@ -601,7 +563,20 @@ p{
 /* ----------------------------------------------------------------------------- */
 /* MAX-WIDTH: 550px */
 
-@media screen and (max-width:550px){
+@media screen and (min-width: 320px) and (max-width:550px){
+
+    html h1{
+        font-size: 40px;
+    }
+    html h2{
+        font-size: 25px;
+    }
+    html h3{
+        font-size: 18px;
+    }
+    html p{
+        font-size: 15px;
+    }
 
     /* -------------------- */
     /* navbar header */
@@ -668,10 +643,6 @@ p{
         width: 90%;
     }
 
-    #titulo-home h2{
-        font-size: 20px;
-    }
-
     #titulo-home label{
         width: 100px;
         height: 30px;
@@ -689,7 +660,6 @@ p{
         margin-top: 30px;
         width: 90%;
         height: 200px;
-
     }
 
     /* -------------------- */
@@ -700,27 +670,16 @@ p{
     }
 
     #about-text{
-        margin-top: 90px;
         width: 80%;
     }
     
     #about-img{
-        margin-top: 90px;
         width: 100%;
     }
 
     #about-img img{
         width: 100%;
         height: auto;
-    }
-
-    #about-text h1{
-        font-size: 35px;
-        margin-bottom: 10px;
-    }
-
-    #about-text p{
-        font-size: 15px;
     }
 
     #about-text label{
@@ -731,23 +690,14 @@ p{
     /* -------------------- */
     /* Seccion menu */
 
-    #menu-text{
-        height: 50px;
-    }
-
-    #menu-text h1{
-        margin-top: 0px;
-        font-size: 45px;
-    }
-
-    #menu-img{
+    #menu-list{
         margin-top: 10px;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
 
-    #menu-img div{
+    #menu-list li{
         width: 80%;
         height: 150px;
         margin: 0;
@@ -755,52 +705,41 @@ p{
         margin: 10px;
     }
 
-    #menu-img img{
+    #menu-list li img{
         width: 50%;
         height: 100px;
     }
 
-    #menu-img h3{
+    #menu-list h3{
         font-size: 10px;
     }
 
     /* -------------------- */
     /* Seccion services */
 
-    #seccion-services div{
+    .services{
+        justify-content: flex-start;
+    }
+
+    #services-item{
         flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
-    #services-text{
-        height: auto;
-    }
-
-    #services-text h1{
-        font-size: 40px;
-        margin-top: 0;
-    }
-
-    #services-img div{
+    #services-item article{
         width: 100%;
         height: 150px;
         margin: 0;
         padding: 0;
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
-    #services-img div img{
+    #services-item article img{
         width: 50%;
         height: 70px;
     }
 
-    #services-img div h2{
-        font-size: 18px;
-    }
-
-    #services-img div p{
-        font-size: 10px;
-    }
-    
     /* -------------------- */
     /* frase */
 
