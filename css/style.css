@@ -400,17 +400,26 @@ p{
     /* --------------------- */
     /* seccion home */
 
-    #image-home{
-        width: 50%;   
+    /* --------------------- */
+    /* seccion menu */
+    #menu-list li{
+        margin: 0;
     }
-
-    #image-home img{
-        margin-top: 30px;
-        width: 100%;
+    #menu-list li figure img{
+        width: 320px;
+        height: 400px;
+    }
+    /* --------------------- */
+    /* seccion servicios */
+    #services-item article{
+        margin: 15px;
+        padding: 0;
+    }
+    #services-item article img{
+        width: 300px;
         height: 400px;
     }
 }
-
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* MAX-WIDTH: 800px */
@@ -479,7 +488,7 @@ p{
     /* Seccion menu */
 
     #menu-list{
-        margin-top: 30px;
+        margin-top: 10px;
         flex-direction: column;
         width: 100%;
         height: auto;
