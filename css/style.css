@@ -223,8 +223,8 @@ p{
 }
 
 #menu-list li{
-    width: 30%;
-    height: 500px;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,11 +250,11 @@ p{
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #services-item article{
-    width: 30%;
+    width: auto;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -418,10 +418,10 @@ p{
 @media screen and (min-width:551px) and (max-width:800px){
 
     html h1{
-        font-size: 55px;
+        font-size: 50px;
     }
     html h2{
-        font-size: 20px;
+        font-size: 25px;
     }
     html h3{
         font-size: 18px;
@@ -451,7 +451,8 @@ p{
     
     #titulo-home{
         width: 80%;
-        height: 200px;
+        height: auto;
+        margin-bottom: 30px;
     }
    
     /* -------------------- */
@@ -465,7 +466,7 @@ p{
     #about-text{
         margin-top: 20px;
         width: 80%;
-        height: 250px;
+        height: auto;
     }
 
     #about-text label{
@@ -477,7 +478,6 @@ p{
     /* -------------------- */
     /* Seccion menu */
 
-
     #menu-list{
         margin-top: 30px;
         flex-direction: column;
@@ -486,13 +486,15 @@ p{
     }
 
     #menu-list li{
-        height: 200px;
-        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin: 0;
     }
 
     #menu-list li figure img{
         width: 100%;
-        height: 200px;
+        height: 100px;
     }
 
     /* -------------------- */
@@ -508,7 +510,7 @@ p{
 
     #services-item article{
         width: 100%;
-        height: 200px;
+        height: auto;
         margin: 0;
         padding: 0;
         margin-top: 10px;
@@ -624,6 +626,7 @@ p{
     
     #titulo-home{
         width: 100%;
+        height: auto;
     }
 
     #titulo-home label{
@@ -644,6 +647,7 @@ p{
 
     #about-text{
         width: 90%;
+        height: auto;
     }
     
     #about-text label{
@@ -663,8 +667,8 @@ p{
 
     #menu-list li{
         width: 100%;
-        height: 150px;
-        margin: 10px;
+        height: auto;
+        margin: 0;
     }
 
     #menu-list li figure img{
